@@ -84,7 +84,6 @@ namespace SoftOS.Graphics
             }
 
             this.prevMouseState=MouseManager.MouseState;
-
         }
     }
 }
