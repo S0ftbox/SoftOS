@@ -17,7 +17,26 @@
         <Profile>VMware</Profile>
         <Description>Use VMware Player or Workstation to deploy and debug.</Description>
         <PxeInterface>192.168.0.8</PxeInterface>
+        <DebugEnabled>False</DebugEnabled>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Audio\test.wav" />
+      <None Remove="Resources\Cursors\CursorBtn.bmp" />
+      <None Remove="Resources\Cursors\CursorCrosshair.bmp" />
+      <None Remove="Resources\Wallpapers\Wallpaper2.bmp" />
+      <None Remove="Resources\Wallpapers\Wallpaper3.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Audio\test.wav" />
+      <EmbeddedResource Include="Resources\Cursors\Cursor.bmp" />
+      <EmbeddedResource Include="Resources\Cursors\CursorBtn.bmp" />
+      <EmbeddedResource Include="Resources\Cursors\CursorCrosshair.bmp" />
+      <EmbeddedResource Include="Resources\Wallpapers\Wallpaper.bmp" />
+      <EmbeddedResource Include="Resources\Wallpapers\Wallpaper2.bmp" />
+      <EmbeddedResource Include="Resources\Wallpapers\Wallpaper3.bmp" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Cosmos.Build" Version="0-*" NoWarn="NU1604" />
